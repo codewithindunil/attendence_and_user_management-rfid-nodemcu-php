@@ -20,7 +20,7 @@ $message = '';
 
 if (  $results  > 0 && password_verify( $_POST['password'], $results['password'] ) ) {
 
-    $_SESSION['user_id'] = $results['id'];
+    $_SESSION['user_id'] = $results['email'];
     header( 'Location: /rfid/home.php' );
 
 } else {
@@ -54,7 +54,7 @@ function alert( $msg ) {
 
 <!-- Icon -->
 <div class = 'fadeIn first'>
-<img src = 'http://danielzawadzki.com/codepen/01/icon.svg' id = 'icon' alt = 'User Icon' />
+<!-- <img src = 'http://danielzawadzki.com/codepen/01/icon.svg' id = 'icon' alt = 'User Icon' /> -->
 </div>
 
 <!-- Login Form -->
@@ -66,7 +66,7 @@ function alert( $msg ) {
 
 <!-- Remind Passowrd -->
 <div id = 'formFooter'>
-<a class = 'underlineHover' href = 'register.php'>Forgot Password?</a>
+<a class = 'underlineHover' href = '#'>Forgot Password?</a>
 </div>
 
 </div>

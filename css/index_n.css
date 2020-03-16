@@ -10,6 +10,9 @@ body{
 	position:relative;
     overflow-y: hidden;
 }
+html{
+    background-color: #56baed;
+  }
 a{
   text-decoration:none;
   color:#444444;

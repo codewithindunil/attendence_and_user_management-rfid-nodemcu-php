@@ -1,4 +1,9 @@
 <?php
+session_start();
+
+if (  $_SESSION['user_id'] =="") {
+    header( 'Location: /rfid/login.php' );
+}
 	$Write="<?php $" . "UIDresult=''; " . "echo $" . "UIDresult;" . " ?>";
 	file_put_contents('UIDContainer.php',$Write);
 ?>

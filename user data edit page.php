@@ -1,6 +1,11 @@
 
 <?php
-    require 'database.php';
+	require 'database.php';
+	session_start();
+
+if (  $_SESSION['user_id'] =="") {
+    header( 'Location: /rfid/login.php' );
+}
     $id = null;
     if ( !empty($_GET['id'])) {
         $id = $_REQUEST['id'];
