@@ -1,7 +1,8 @@
 <?php
      
     require 'database.php';
- 
+	$date=date("Y/m/d");
+	$time=date("H:i:s");
     if ( !empty($_POST)) {
         // keep track post values
         $name = $_POST['name'];
@@ -14,9 +15,9 @@
 		// insert data
         $pdo = Database::connect();
 		$pdo->setAttribute(PDO::ATTR_ERRMODE, PDO::ERRMODE_EXCEPTION);
-		$sql = "INSERT INTO table_nodemcu_rfidrc522_mysql (name,id,gender,email,mobile,count) values(?, ?, ?, ?, ?,?)";
+		$sql = "INSERT INTO table_nodemcu_rfidrc522_mysql (name,id,gender,email,mobile,date,time) values(?, ?, ?, ?, ?,?,?)";
 		$q = $pdo->prepare($sql);
-		$q->execute(array($name,$id,$gender,$email,$mobile,$count));
+		$q->execute(array($name,$id,$gender,$email,$mobile,$date,$time));
 		Database::disconnect();
 
 

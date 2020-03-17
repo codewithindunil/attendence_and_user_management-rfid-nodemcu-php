@@ -127,7 +127,12 @@ if (  $_SESSION['user_id'] =="") {
 									<td align="left">--------</td>
 								</tr>
 								<tr>
-									<td align="left" class="lf">Days Attended</td>
+									<td align="left" class="lf">Date Registered</td>
+									<td style="font-weight:bold">:</td>
+									<td align="left">--------</td>
+								</tr>
+								<tr>
+									<td align="left" class="lf">Time Registered</td>
 									<td style="font-weight:bold">:</td>
 									<td align="left">--------</td>
 								</tr>

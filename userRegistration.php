@@ -68,12 +68,12 @@ if (  $_SESSION['user_id'] =="") {
 		}
 		</style>
 		
-		<title>Registration : NodeMCU V3 ESP8266 / ESP12E with MYSQL Database</title>
+		<title>Registration</title>
 	</head>
 	
 	<body>
 
-		<h2 align="center">NodeMCU V3 ESP8266 / ESP12E with MYSQL Database</h2>
+		
 		<ul class="topnav">
 			<li><a href="home.php">Home</a></li>
 			<li><a href="user data.php">User Data</a></li>

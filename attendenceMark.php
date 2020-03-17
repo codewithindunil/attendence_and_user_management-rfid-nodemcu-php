@@ -78,11 +78,13 @@
 					<h3 align="center">SIGN IN</h3>
 				</div>
 				<br>
-				<form class="form-horizontal" action="markAttendenceDb.php" method="post" >
+				<form class="form-horizontal" action="markAttendenceDb.php" method="POST" >
 					<div class="control-group">
 						<label class="control-label">ID</label>
 						<div class="controls">
-							<textarea name="id" id="getUID" placeholder="Please Tag your Card / Key Chain to display ID" rows="3" cols="10"  required></textarea>
+							<!-- <textarea name="id" id="getUID" placeholder="Please Tag your Card / Key Chain to display ID" rows="3" cols="10"  required></textarea> -->
+							<input type="text" name="getUID" id="getUID" placeholder="Please Tag your Card / Key Chain to display ID" rows="3" cols="10"  required>
+
 						</div>
 					</div>
 
